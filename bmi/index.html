@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <div class=" d-block d-md-flex justify-content-md-evenly justify-content-lg-evenly mt-5">
+      <div
+        class="border rounded-4 p-5 d-inline-block"
+        style="box-shadow: 0px 0px 10px 10px rgba(0, 0, 255, 0.502)"
+      >
+        <h1 class="mb-3">BMI Calculator</h1>
+        <div class="text-center text-lg-center">
+          <label for="height">Height in (cm)</label>
+          <input
+            type="number"
+            class="w-50 form-control text-center border-black rounded-0 d-block mx-auto mx-lg-auto border-0 border-bottom mb-3"
+            name="height"
+            id="height"
+          />
+          <label for="weight">Weight in (kg)</label>
+          <input
+            type="number"
+            class="w-50 form-control text-center border-black rounded-0 d-block mx-auto mx-lg-auto border-0 border-bottom mb-3"
+            name="weight"
+            id="weight"
+          />
+
+          <button class="w-100 btn border bg-primary mt-3" id="btn">
+            Calculate
+          </button>
+          <button class="w-50 mt-4 btn border bg-danger mt-3" id="clear">
+            Clear
+          </button>
+          <div class="mt-3 mt-lg-3" id="result"></div>
+        </div>
+      </div>
+      <div
+        class="border rounded-4 p-4  mt-5 "
+        style="
+          box-shadow: 0px 0px 10px 10px rgba(255, 0, 0, 0.502);
+          width: 350px;height: 400px;
+        "
+      >
+      <h4 class=" mb-4">Feet Inches To Centimeters </h4>
+
+  <div class="row">
+    <div class="col-6">
+      <div>
+        <label for="feet" class="form-label">Feet </label>
+        <input type="number" class="form-control" id="feet">
+      </div>
+    </div>
+    <div class="col-6">
+      <div>
+        <label for="inches" class="form-label">Inches </label>
+        <input type="number" class="form-control" id="inches">
+      
+      </div>
+    </div>
+  
+  </div>
+<div class="mt-4">
+  <button class="btn btn-outline-info " id="tocm">Change</button>
+  <span class="ms-5" id="totalcm">
+
+  </span>
+</div>
+<hr>
+<h4>Pound To Kilogram</h4>
+<input type="number" id="pound" class="form-control" placeholder="input value of pound" >
+<div class="mt-3">
+  <button class="btn btn-outline-warning " id="tokg">Change</button>
+  <span class="ms-5" id="totalkg"></span>
+</div>
+
+
+       
+      </div>
+    </div>
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
